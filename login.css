@@ -1,0 +1,24 @@
+.container { 
+    display: flex;
+
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-login { 
+    align-self: center;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#btnlogar { 
+    margin: 15px;
+}

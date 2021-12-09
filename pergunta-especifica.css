@@ -1,0 +1,104 @@
+.home-container { 
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.titulo-pergunta { 
+    font-family: sans-serif;
+}
+
+.voto-pergunta-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.pergunta-box { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 700px;
+
+    padding: 0px 15px 0px 15px;
+    border-radius: 8px;
+
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.svg-lixo {
+    fill: red;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 150ms;
+}
+
+.cursos-container { 
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.votos-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.plus-minus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 5px;
+
+    border: 1px solid gray;
+}
+
+.valor-voto { 
+    margin: 0;
+}
+
+.separador { 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 50%;
+    border: 1px dashed gray;
+}
+
+.votos-container-2, .svg-lixo-2 {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.resposta-container { 
+    width: 700px;
+    margin-left: 60px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-texto {
+    border: 1px solid lightblue;
+    outline: 1px solid blue;
+    margin-right: 15px;
+    resize: none;
+    width: 100%;
+    height: 100px;
+    align-self: center;
+    padding: 20px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="pergunta-especifica.css" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="home-container">
+        <h1 class="titulo-pergunta">Pergunta 1</h1>
+
+        <div class="voto-pergunta-box">
+
+            <div class="votos-container-2">
+                <button onclick="callVoto(1)" class="plus-minus">+</button>
+                <p id="valor-voto-2" class="valor-voto">0</p>
+                <button onclick="callVoto(-1)" class="plus-minus">-</button>
+            </div>
+
+            <div class="pergunta-box">
+                <p> Como faço para inicializar uma struct com dados extraídos de um arquivo ?</p>
+                <svg class="svg-lixo-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M3 6v18h18v-18h-18zm5 14c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4-18v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="separador"></div>
+
+        <div class="voto-pergunta-box">
+
+            <div class="votos-container">
+                <button onclick="callVoto(1)" class="plus-minus">+</button>
+                <p id="valor-voto" class="valor-voto">10</p>
+                <button onclick="callVoto(-1)" class="plus-minus">-</button>
+            </div>
+
+            <div class="pergunta-box">
+                <p> Você precisa criar um buffer, e ai da pra utilizar o sscanf pra atribuir os valores, passando um
+                    formato de acordo com sua struct ?</p>
+                <svg class="svg-lixo" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path
+                        d="M3 6v18h18v-18h-18zm5 14c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm5 0c0 .552-.448 1-1 1s-1-.448-1-1v-10c0-.552.448-1 1-1s1 .448 1 1v10zm4-18v2h-20v-2h5.711c.9 0 1.631-1.099 1.631-2h5.315c0 .901.73 2 1.631 2h5.712z" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="resposta-container">
+            <textarea class="area-texto"></textarea>
+            <button> Enviar </button>
+        </div>
+
+
+    </div>
+
+    <script defer>
+        let votos = 10;
+
+        function callVoto(value) {
+            const voto = document.getElementById("valor-voto");
+            if (value || value) {
+                votos += value;
+                voto.innerHTML = votos;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

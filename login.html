@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="estilo.css" rel="stylesheet">
+    <link href="login.css" rel="stylesheet">
+    <style>
+        * {
+            font-family: sans-serif;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="titulo">Entrar</h1>
+
+    <div class="container">
+
+        <div class="container-login">
+
+            <label>Login</label>
+            <input placeholder="RA" class='campo' type="text" name="login" required>
+            <label>Senha</label>
+            <input placeholder="password" class="campo" type="password" name="senha" required>
+
+            <button id="btnlogar" onclick="trocarPagina('home.html');">Logar</button>
+
+
+        </div>
+
+    </div>
+
 
     <script type="text/javascript" src="codigo.js"></script>
 
-    <div class="div">
-        <b>Login</b>
-        <input class='campo' type="text" name="login" required>
-        <b>Senha</b>
-        <input class="campo type="password" name="senha" required>
 
-        <button id="btnlogar" onclick="trocarPagina('home.html'); alert('Logado com Sucesso!')">Logar</button>
-    </div>
 </body>
+
 </html>
